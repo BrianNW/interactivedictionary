@@ -11,7 +11,8 @@ def translate(word):
     if w in data:
         return data[w]
     # initializes suggestion
-    elif get_close_matches(w, data.keys())
+    elif len(get_close_matches(w, data.keys())) > 0;
+        return "Did you mean %s instead?" % get_close_matches(w, data.keys())[0]
     else:
         return "Word doesn't exist.  Please double check it."
 
