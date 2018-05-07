@@ -3,6 +3,7 @@ import json
 data = json.load(open("data.json"))
 
 def translate(word):
+    w = w.lower()
     # counting for nonexistent words
     if w in data:
         return data[word]
