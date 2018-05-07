@@ -6,7 +6,7 @@ def translate(word):
     w = w.lower()
     # counting for nonexistent words
     if w in data:
-        return data[word]
+        return data[w]
     else:
         return "Word doesn't exist.  Please double check it."
 
